@@ -3,7 +3,6 @@ body {
     radial-gradient(circle at top right, #2563eb22, transparent 35%),
     radial-gradient(circle at bottom left, #06b6d422, transparent 30%),
     var(--background);
-  color: white;
 }
 section {
   padding: 100px 8%;
