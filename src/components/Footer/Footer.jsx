@@ -36,7 +36,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-top">
           <div className="footer-brand">
-            <h2>George Ndzi</h2>
+            <h2>Eyongtarh Besong</h2>
 
             <p>
               Full Stack Software Developer passionate about building modern,
@@ -85,7 +85,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© {currentYear} George Ndzi. All Rights Reserved.</p>
+          <p>© {currentYear} Eyongtarh Besong . All Rights Reserved.</p>
 
           <a href="#hero" className="back-to-top">
             <i className="fa-solid fa-arrow-up"></i>
