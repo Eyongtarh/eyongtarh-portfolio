@@ -7,7 +7,7 @@ const projects = [
     demo: "https://your-domain.com",
     category: "Frontend",
     highlight: "Personal Portfolio",
-    technologies: ["React", "CSS", "Framer Motion"],
+    technologies: ["React", "JavaScript", "CSS", "Vite", "Framer Motion"],
   },
 
   {
@@ -41,6 +41,7 @@ const projects = [
       "CSS",
       "Django",
       "PostgreSQL",
+      "Agile Development",
     ],
   },
 
@@ -61,6 +62,7 @@ const projects = [
       "PostgreSQL",
       "Stripe",
       "AWS S3",
+      "Agile Development",
     ],
   },
 ];

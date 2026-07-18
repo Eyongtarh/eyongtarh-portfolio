@@ -38,6 +38,8 @@ export default function Navbar() {
 
           <a href="#experience">Experience</a>
 
+          <a href="#education">Education</a>
+
           <a href="#projects">Projects</a>
 
           <a href="#interests">Interests</a>
