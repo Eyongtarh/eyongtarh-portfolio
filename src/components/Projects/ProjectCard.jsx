@@ -32,7 +32,7 @@ export default function ProjectCard({ project }) {
         </div>
 
         <div className="project-info">
-          <span>⭐ {project.stargazers_count}</span>
+          <span>⭐⭐ {project.stargazers_count}</span>
 
           <span>🍴 {project.forks_count}</span>
 

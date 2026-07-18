@@ -33,9 +33,9 @@ const socialLinks = [
     url: "https://www.linkedin.com/in/a-eyongtarh-besong-22ab9b281/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BB4C9QtntQn2cFJU2nmfRNQ%3D%3D",
   },
   {
-    icon: "fa-solid fa-file-arrow-down",
-    name: "Download CV",
-    url: "/cv.pdf",
+    icon: "fa-solid fa-envelope",
+    url: "mailto:eyongtarh@gmail.com",
+    label: "Email",
   },
 ];
 

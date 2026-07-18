@@ -37,15 +37,6 @@ export default function Navbar() {
           <a href="#contact">Contact</a>
         </nav>
 
-        <a
-          href="/cv.pdf"
-          className="btn nav-btn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Download CV
-        </a>
-
         <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
           <i className="fas fa-bars"></i>
         </button>

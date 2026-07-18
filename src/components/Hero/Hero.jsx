@@ -19,7 +19,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
         >
-          A. Eyongtarh Besong
+          Eyongtarh Besong
         </motion.h1>
 
         <motion.h2
@@ -49,8 +49,12 @@ export default function Hero() {
           <a href="#projects" className="btn">
             View Projects
           </a>
-
-          <a href="/cv.pdf" className="btn secondary-btn">
+          <a
+            href="/cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn secondary-btn"
+          >
             Download CV
           </a>
         </motion.div>

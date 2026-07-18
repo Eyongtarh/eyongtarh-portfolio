@@ -4,7 +4,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { name: "Home", href: "#hero" },
+    { name: "Home", href: "/" },
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Experience", href: "#experience" },
@@ -77,13 +77,17 @@ export default function Footer() {
               ))}
             </div>
 
-            <a href="/cv.pdf" className="download-cv">
+            <a
+              href="/cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="download-cv"
+            >
               <i className="fa-solid fa-download"></i>
               Download CV
             </a>
           </div>
         </div>
-
         <div className="footer-bottom">
           <p>© {currentYear} Eyongtarh Besong . All Rights Reserved.</p>
 
