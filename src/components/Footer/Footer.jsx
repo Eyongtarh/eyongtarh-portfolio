@@ -70,9 +70,11 @@ export default function Footer() {
                       ? "noopener noreferrer"
                       : undefined
                   }
-                  aria-label={social.label}
+                  aria-label={`Visit my ${social.label} profile${
+                    social.url.startsWith("http") ? " (opens in a new tab)" : ""
+                  }`}
                 >
-                  <i className={social.icon}></i>
+                  <i className={social.icon} aria-hidden="true"></i>
                 </a>
               ))}
             </div>
@@ -91,8 +93,8 @@ export default function Footer() {
         <div className="footer-bottom">
           <p>© {currentYear} Eyongtarh Besong . All Rights Reserved.</p>
 
-          <a href="/" className="back-to-top">
-            <i className="fa-solid fa-arrow-up"></i>
+          <a href="/" className="back-to-top" aria-label="Back to top - Home">
+            <i className="fa-solid fa-arrow-up" aria-hidden="true"></i>
           </a>
         </div>
       </div>

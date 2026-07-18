@@ -48,7 +48,7 @@ const experience = [
     role: "Driving Instructor",
     company: "Transportstyrelsen",
     location: "Gothenburg, Sweden",
-    period: "March 2015 – Present",
+    period: "March 2015 - Present",
     summary: "Certified driving instructor.",
     highlights: [
       "Train learner drivers according to Swedish regulations.",
@@ -64,7 +64,7 @@ const experience = [
     role: "Export Management",
     company: "Nordtrafik AB Collaboration",
     location: "Gothenburg, Sweden",
-    period: "May 2013 – November 2019",
+    period: "May 2013 - November 2019",
     summary: "Export logistics and customer relationship management.",
     highlights: [
       "Managed export operations.",
@@ -81,7 +81,7 @@ const experience = [
     role: "Managing Partner",
     company: "Sävenäs Hus & Hemtjänster HB",
     location: "Gothenburg, Sweden",
-    period: "October 2012 – June 2018",
+    period: "October 2012 - June 2018",
     summary: "Business management and operations.",
     highlights: [
       "Co-managed company operations.",
@@ -97,7 +97,7 @@ const experience = [
     role: "Courier",
     company: "VTD",
     location: "Sweden",
-    period: "December 2009 – June 2013",
+    period: "December 2009 - June 2013",
     summary: "Part-time distribution services.",
     highlights: [
       "Delivered newspapers and publications.",
@@ -112,7 +112,7 @@ const experience = [
     role: "High School Economics Teacher",
     company: "Saint Joseph College, Sasse & Bishop Rogan College",
     location: "Cameroon",
-    period: "September 2007 – June 2009",
+    period: "September 2007 - June 2009",
     summary: "Economics teacher.",
     highlights: [
       "Prepared students for national examinations.",
@@ -128,7 +128,7 @@ const experience = [
     role: "Founder & Manager",
     company: "E-PRINTS SARL",
     location: "Buea, Cameroon",
-    period: "April 2006 – August 2009",
+    period: "April 2006 - August 2009",
     summary: "Owned and managed a printing business.",
     highlights: [
       "Founded the company.",
@@ -145,7 +145,7 @@ const experience = [
     role: "Operations Team",
     company: "Unity Co-operative Society (UNICS) Plc",
     location: "Cameroon",
-    period: "September 2004 – June 2006",
+    period: "September 2004 - June 2006",
     summary: "Operations support.",
     highlights: [
       "Supported business operations.",

@@ -85,9 +85,11 @@ export default function ContactInfo() {
             rel={
               social.url.startsWith("http") ? "noopener noreferrer" : undefined
             }
-            aria-label={social.name}
+            aria-label={`Visit my ${social.name} profile${
+              social.url.startsWith("http") ? " (opens in a new tab)" : ""
+            }`}
           >
-            <i className={social.icon}></i>
+            <i className={social.icon} aria-hidden="true"></i>
           </a>
         ))}
       </div>

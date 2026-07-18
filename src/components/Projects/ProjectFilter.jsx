@@ -8,20 +8,28 @@ export default function ProjectFilter({
   return (
     <div className="project-filter">
       <button
+        type="button"
         className={current === "All" ? "active" : ""}
         onClick={() => setCurrent("All")}
+        aria-pressed={current === "All"}
       >
         All
       </button>
 
       {categories.map((category) => (
-        <button
-          key={category}
-          className={current === category ? "active" : ""}
-          onClick={() => setCurrent(category)}
-        >
-          {category}
-        </button>
+        <div role="group" aria-label="Project category filters">
+          {categories.map((category) => (
+            <button
+              key={category}
+              type="button"
+              className={current === category ? "active" : ""}
+              onClick={() => setCurrent(category)}
+              aria-pressed={current === category}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
       ))}
     </div>
   );

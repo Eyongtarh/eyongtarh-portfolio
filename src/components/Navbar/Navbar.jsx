@@ -18,12 +18,20 @@ export default function Navbar() {
   return (
     <header className={scrolled ? "navbar navbar-scrolled" : "navbar"}>
       <div className="nav-container">
-        <a href="/" className="logo">
-          <img src="/logo.png" alt="EB Consulting" className="logo-image" />
+        <a href="/" className="logo" aria-label="Eyongtarh Besong - Home">
+          <img
+            src="/logo.png"
+            alt="EB Consulting logo"
+            className="logo-image"
+          />
           <span>Eyongtarh Besong</span>
         </a>
 
-        <nav className={menuOpen ? "nav-links open" : "nav-links"}>
+        <nav
+          className={menuOpen ? "nav-links open" : "nav-links"}
+          id="primary-navigation"
+          aria-label="Primary navigation"
+        >
           <a href="#about">About</a>
 
           <a href="#skills">Skills</a>
@@ -37,8 +45,17 @@ export default function Navbar() {
           <a href="#contact">Contact</a>
         </nav>
 
-        <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-          <i className="fas fa-bars"></i>
+        <button
+          className="hamburger"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={
+            menuOpen ? "Close navigation menu" : "Open navigation menu"
+          }
+          aria-expanded={menuOpen}
+          aria-controls="primary-navigation"
+          type="button"
+        >
+          <i className="fas fa-bars" aria-hidden="true"></i>
         </button>
       </div>
     </header>

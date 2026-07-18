@@ -41,13 +41,23 @@ export default function ProjectCard({ project }) {
 
         <div className="project-links">
           {project.demo && (
-            <a href={project.demo} target="_blank" rel="noreferrer">
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View the live demo for ${project.name} (opens in a new tab)`}
+            >
               Live Demo
             </a>
           )}
 
-          <a href={project.html_url} target="_blank" rel="noreferrer">
-            GitHub
+          <a
+            href={project.html_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`View ${project.name} on GitHub (opens in a new tab)`}
+          >
+            View on GitHub
           </a>
         </div>
       </div>
