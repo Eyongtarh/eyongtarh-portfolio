@@ -12,7 +12,7 @@ export default function useGithubRepos() {
     async function loadRepos() {
       try {
         const response = await fetch(
-          `https://api.github.com/users/${Eyongtarh}/repos?sort=updated&per_page=100`,
+          `https://api.github.com/users/${USERNAME}/repos?sort=updated&per_page=100`,
         );
 
         if (!response.ok) {
