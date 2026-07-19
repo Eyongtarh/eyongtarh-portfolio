@@ -17,7 +17,7 @@ const contactItems = [
     icon: "fa-solid fa-location-dot",
     title: "Location",
     value: "Göteborg, Sweden",
-    link: null,
+    link: "https://maps.google.com/?q=Gothenburg,Sweden",
   },
 ];
 
@@ -35,7 +35,7 @@ const socialLinks = [
   {
     icon: "fa-solid fa-envelope",
     name: "Email",
-    url: "mailto:eyongtarh@gmail.com",
+    url: "mailto:eyongtarhb@gmail.com",
   },
 ];
 
@@ -60,14 +60,24 @@ export default function ContactInfo() {
         {contactItems.map((item) => (
           <div className="contact-item" key={item.title}>
             <div className="contact-icon">
-              <i className={item.icon}></i>
+              <i className={item.icon} aria-hidden="true"></i>
             </div>
 
             <div>
               <h4>{item.title}</h4>
 
               {item.link ? (
-                <a href={item.link}>{item.value}</a>
+                <a
+                  href={item.link}
+                  target={item.link.startsWith("http") ? "_blank" : undefined}
+                  rel={
+                    item.link.startsWith("http")
+                      ? "noopener noreferrer"
+                      : undefined
+                  }
+                >
+                  {item.value}
+                </a>
               ) : (
                 <span>{item.value}</span>
               )}
@@ -85,7 +95,7 @@ export default function ContactInfo() {
             rel={
               social.url.startsWith("http") ? "noopener noreferrer" : undefined
             }
-            aria-label={`Visit my ${social.name} profile${
+            aria-label={`Visit my ${social.name}${
               social.url.startsWith("http") ? " (opens in a new tab)" : ""
             }`}
           >
