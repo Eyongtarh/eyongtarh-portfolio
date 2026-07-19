@@ -21,8 +21,10 @@ export default function Navbar() {
         <a href="/" className="logo" aria-label="Eyongtarh Besong - Home">
           <img
             src="/logo.png"
-            alt="EB Consulting logo"
+            alt="Eyongtarh Besong logo"
             className="logo-image"
+            width="48"
+            height="48"
           />
           <span>Eyongtarh Besong</span>
         </a>

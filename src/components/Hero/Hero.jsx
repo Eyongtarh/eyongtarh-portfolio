@@ -71,7 +71,7 @@ export default function Hero() {
           }}
         >
           <img
-            src="/profile.png"
+            src="/profile.jpeg"
             alt="Eyongtarh Besong"
             width="420"
             height="420"

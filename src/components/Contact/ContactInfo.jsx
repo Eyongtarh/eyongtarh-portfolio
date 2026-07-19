@@ -4,8 +4,8 @@ const contactItems = [
   {
     icon: "fa-solid fa-envelope",
     title: "Email",
-    value: "eyongtarhb@gmail.com.com",
-    link: "mailto:eyongtarhb@gmail.com.com",
+    value: "eyongtarhb@gmail.com",
+    link: "mailto:eyongtarhb@gmail.com",
   },
   {
     icon: "fa-solid fa-phone",
@@ -34,8 +34,8 @@ const socialLinks = [
   },
   {
     icon: "fa-solid fa-envelope",
+    name: "Email",
     url: "mailto:eyongtarh@gmail.com",
-    label: "Email",
   },
 ];
 
