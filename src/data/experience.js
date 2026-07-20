@@ -59,11 +59,12 @@ const experience = [
   {
     id: 4,
     icon: "fa-solid fa-car",
-    role: "Driving Instructor",
+    role: "Part-time Driving Instructor",
     company: "Transportstyrelsen",
     location: "Gothenburg, Sweden",
     period: "March 2015 - Present",
-    summary: "Certified driving instructor.",
+    summary:
+      "Approved Driving Supervisor by the Swedish Transport Agency(Active)",
     highlights: [
       "Train learner drivers according to Swedish regulations.",
       "Promote defensive driving and road safety.",
@@ -75,7 +76,7 @@ const experience = [
   {
     id: 5,
     icon: "fa-solid fa-ship",
-    role: "Export Management",
+    role: "Part-time Export Management",
     company: "Nordtrafik AB Collaboration",
     location: "Gothenburg, Sweden",
     period: "May 2013 - November 2019",
@@ -114,7 +115,7 @@ const experience = [
     period: "December 2009 - June 2013",
     summary: "Part-time distribution services.",
     highlights: [
-      "Delivered newspapers and publications.",
+      "Delivered parcels, letters, newspapers, and publications.",
       "Maintained excellent delivery reliability.",
     ],
     technologies: ["Customer Service", "Reliability"],
@@ -123,10 +124,27 @@ const experience = [
   {
     id: 8,
     icon: "fa-solid fa-school",
+    role: "Examiner",
+    company: "Cameroon General Certificate Of Education Board",
+    location: "Cameroon",
+    period: "2007 - 2008",
+    summary:
+      "Assessed candidates' examination scripts in accordance with national group marking standards and examination guidelines.",
+    highlights: [
+      "Marked and evaluated examination scripts accurately and consistently.",
+      "Applied national group marking schemes to ensure fairness and quality.",
+      "Maintained confidentiality and integrity throughout the examination process.",
+    ],
+    technologies: ["Assessment", "Attention to Detail", "Communication"],
+  },
+
+  {
+    id: 9,
+    icon: "fa-solid fa-school",
     role: "High School Economics Teacher",
     company: "Saint Joseph College, Sasse & Bishop Rogan College",
     location: "Cameroon",
-    period: "September 2007 - June 2009",
+    period: "September 2008 - June 2009",
     summary: "Economics teacher.",
     highlights: [
       "Prepared students for national examinations.",
@@ -137,24 +155,46 @@ const experience = [
   },
 
   {
-    id: 9,
-    icon: "fa-solid fa-print",
-    role: "Founder & Manager",
-    company: "E-PRINTS SARL",
-    location: "Buea, Cameroon",
-    period: "April 2006 - August 2009",
-    summary: "Owned and managed a printing business.",
+    id: 10,
+    icon: "fa-solid fa-school",
+    role: "Formator",
+    company: "Bishop Rogan College, Small Soppo",
+    location: "Cameroon",
+    period: "September 2007 - June 2008",
+    summary: "Minor Seminary High School Economics teacher.",
     highlights: [
-      "Founded the company.",
-      "Managed finance and operations.",
-      "Led customer service.",
-      "Supervised daily business activities.",
+      "Prepared Seminarians for national examinations.",
+      "Developed lesson plans.",
+      "Delivered classroom instruction.",
     ],
-    technologies: ["Entrepreneurship", "Business", "Leadership"],
+    technologies: ["Teaching", "Leadership", "Public Speaking"],
   },
 
   {
-    id: 10,
+    id: 11,
+    icon: "fa-solid fa-print",
+    role: "Founder & Proprietor",
+    company: "E-PRINTS SARL",
+    location: "Buea, Cameroon",
+    period: "April 2006 - August 2009",
+    summary:
+      "Founded and owned an office support and document services business, providing printing, document preparation, and office stationery solutions while overseeing the company's strategic direction and financial management.",
+    highlights: [
+      "Established and managed a business offering typing, printing, scanning, photocopying, and document preparation services.",
+      "Oversaw financial management, business operations, and strategic planning.",
+      "Maintained strong customer relationships and ensured high-quality service delivery.",
+      "Delegated and supervised day-to-day operational activities.",
+    ],
+    technologies: [
+      "Business Management",
+      "Entrepreneurship",
+      "Customer Service",
+      "Operations Management",
+    ],
+  },
+
+  {
+    id: 12,
     icon: "fa-solid fa-gear",
     role: "Operations Team",
     company: "Unity Co-operative Society (UNICS) Plc",
