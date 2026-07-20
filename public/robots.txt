@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://eyongtarh-portfolio-6t6qa4jcp-eyongtarhs-projects.vercel.app/sitemap.xml
+Sitemap: https://eyongtarh-portfolio.vercel.app/sitemap.xml

@@ -29,7 +29,7 @@ const experience = [
     icon: "fa-solid fa-database",
     role: "Information Systems Associate",
     company: "Budbee",
-    location: "Götoborg, Sweden",
+    location: "Sweden",
     period: "December 2022 - March 2024",
     summary:
       "Supported daily operations through information systems management.",

@@ -1,10 +1,10 @@
 const projects = [
   {
-    github: "Eyongtarh-portfolio",
+    github: "eyongtarh-portfolio",
     featured: true,
-    order: 4,
+    order: 1,
     image: "/images/projects/portfolio.png",
-    demo: "https://your-domain.com",
+    demo: "https://eyongtarh-portfolio.vercel.app",
     category: "Frontend",
     highlight: "Personal Portfolio",
     technologies: ["React", "JavaScript", "CSS", "Vite", "Framer Motion"],
@@ -13,7 +13,7 @@ const projects = [
   {
     github: "Ekpaw-Spicies",
     featured: true,
-    order: 1,
+    order: 2,
     image: "/images/projects/ekpaw.png",
     demo: "https://ekpaw-spicies-e70a831cb30f.herokuapp.com",
     category: "Full Stack",
@@ -29,7 +29,7 @@ const projects = [
   {
     github: "Riders-Club-Project",
     featured: true,
-    order: 2,
+    order: 3,
     image: "/images/projects/riders.png",
     demo: "https://riders-club-project-013aecf05a65.herokuapp.com",
     category: "Full Stack",
@@ -48,7 +48,7 @@ const projects = [
   {
     github: "Tarh-Tastyhub",
     featured: true,
-    order: 3,
+    order: 4,
     image: "/images/projects/tastyhub.webp",
     demo: "https://tarh-tastyhub-4071346c00af.herokuapp.com",
     category: "Full Stack",
