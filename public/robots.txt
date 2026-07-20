@@ -1,12 +1,4 @@
-# Allow all search engines
 User-agent: *
-
-# Allow all pages
 Allow: /
 
-# Block admin pages (if they exist)
-Disallow: /admin/
-Disallow: /private/
-
-# Sitemap location
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://eyongtarh-portfolio-6t6qa4jcp-eyongtarhs-projects.vercel.app/sitemap.xml
