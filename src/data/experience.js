@@ -124,7 +124,7 @@ const experience = [
   {
     id: 8,
     icon: "fa-solid fa-school",
-    role: "Examiner",
+    role: "High School Economics Examiner",
     company: "Cameroon General Certificate Of Education Board",
     location: "Cameroon",
     period: "2007 - 2008",
