@@ -24,9 +24,23 @@ const experience = [
       "Git",
     ],
   },
-
   {
     id: 2,
+    icon: "fa-solid fa-database",
+    role: "Information Systems Associate",
+    company: "Budbee",
+    location: "Götoborg, Sweden",
+    period: "December 2022 - March 2024",
+    summary:
+      "Supported daily operations through information systems management.",
+    highlights: [
+      "Managed information systems to support daily operations.",
+      "Maintained accurate data and system records.",
+    ],
+    technologies: ["Information Systems", "Data Management", "Operations"],
+  },
+  {
+    id: 3,
     icon: "fa-solid fa-chart-line",
     role: "Business Consultant",
     company: "MECANUS",
@@ -43,7 +57,7 @@ const experience = [
   },
 
   {
-    id: 3,
+    id: 4,
     icon: "fa-solid fa-car",
     role: "Driving Instructor",
     company: "Transportstyrelsen",
@@ -59,7 +73,7 @@ const experience = [
   },
 
   {
-    id: 4,
+    id: 5,
     icon: "fa-solid fa-ship",
     role: "Export Management",
     company: "Nordtrafik AB Collaboration",
@@ -76,7 +90,7 @@ const experience = [
   },
 
   {
-    id: 5,
+    id: 6,
     icon: "fa-solid fa-building",
     role: "Managing Partner",
     company: "Sävenäs Hus & Hemtjänster HB",
@@ -92,7 +106,7 @@ const experience = [
   },
 
   {
-    id: 6,
+    id: 7,
     icon: "fa-solid fa-truck",
     role: "Courier",
     company: "VTD",
@@ -107,7 +121,7 @@ const experience = [
   },
 
   {
-    id: 7,
+    id: 8,
     icon: "fa-solid fa-school",
     role: "High School Economics Teacher",
     company: "Saint Joseph College, Sasse & Bishop Rogan College",
@@ -123,7 +137,7 @@ const experience = [
   },
 
   {
-    id: 8,
+    id: 9,
     icon: "fa-solid fa-print",
     role: "Founder & Manager",
     company: "E-PRINTS SARL",
@@ -140,7 +154,7 @@ const experience = [
   },
 
   {
-    id: 9,
+    id: 10,
     icon: "fa-solid fa-gear",
     role: "Operations Team",
     company: "Unity Co-operative Society (UNICS) Plc",
