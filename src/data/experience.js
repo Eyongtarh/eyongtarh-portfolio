@@ -142,7 +142,7 @@ const experience = [
     id: 9,
     icon: "fa-solid fa-school",
     role: "High School Economics Teacher",
-    company: "Saint Joseph College, Sasse & Bishop Rogan College",
+    company: "Saint Joseph College, Sasse",
     location: "Cameroon",
     period: "September 2008 - June 2009",
     summary: "Economics teacher.",
