@@ -37,7 +37,7 @@ const skills = {
     "Git",
     "GitHub",
     "Figma",
-    "DevTools",
+    "Chrome DevTools",
   ],
 };
 

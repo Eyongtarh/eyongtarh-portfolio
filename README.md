@@ -1,5 +1,13 @@
 # A. Eyongtarh Besong --- Portfolio
 
+---
+
+**Deployed website: [Link to website](https://eyongtarh-portfolio.vercel.app/)**
+
+![Main image](public/images/projects/hero.png)
+
+---
+
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](#)
 [![Vite](https://img.shields.io/badge/Vite-Frontend-646CFF?logo=vite&logoColor=white)](#)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)](#)
@@ -11,7 +19,7 @@ and component-based architecture.
 
 ---
 
-## ✨ Features
+## Features
 
 - Responsive design for desktop, tablet, and mobile
 - Smooth animations with Framer Motion
@@ -23,7 +31,7 @@ and component-based architecture.
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 **Frontend**
 
