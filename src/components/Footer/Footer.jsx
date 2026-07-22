@@ -4,7 +4,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { name: "Home", href: "/" },
+    { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Experience", href: "#experience" },
@@ -70,7 +70,7 @@ export default function Footer() {
                       ? "noopener noreferrer"
                       : undefined
                   }
-                  aria-label={`Visit my ${social.label} profile${
+                  aria-label={`Visit my ${social.label}${
                     social.url.startsWith("http") ? " (opens in a new tab)" : ""
                   }`}
                 >
@@ -90,10 +90,11 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="footer-bottom">
-          <p>© {currentYear} Eyongtarh Besong . All Rights Reserved.</p>
 
-          <a href="/" className="back-to-top" aria-label="Back to top - Home">
+        <div className="footer-bottom">
+          <p>© {currentYear} Eyongtarh Besong. All Rights Reserved.</p>
+
+          <a href="#home" className="back-to-top" aria-label="Back to top">
             <i className="fa-solid fa-arrow-up" aria-hidden="true"></i>
           </a>
         </div>
