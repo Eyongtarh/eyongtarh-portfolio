@@ -1,0 +1,145 @@
+.floating-icons {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.floating-icon-card {
+  position: absolute;
+
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.25),
+    inset 0 1px 1px rgba(255, 255, 255, 0.05);
+
+  opacity: 0.55;
+}
+
+.floating-icon-card::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  padding: 1px;
+
+  border-radius: inherit;
+
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.5),
+    transparent,
+    rgba(6, 182, 212, 0.5)
+  );
+
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+}
+
+.floating-icon-card i {
+  font-size: 2.3rem;
+
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.15));
+}
+
+/* React */
+
+.devicon-react-original {
+  color: #61dafb;
+}
+
+/* JavaScript */
+
+.devicon-javascript-plain {
+  color: #f7df1e;
+}
+
+/* Python */
+
+.devicon-python-plain {
+  color: #3776ab;
+}
+
+/* Django */
+
+.devicon-django-plain {
+  color: #44b78b;
+}
+
+/* PostgreSQL */
+
+.devicon-postgresql-plain {
+  color: #336791;
+}
+
+/* HTML */
+
+.devicon-html5-plain {
+  color: #e44d26;
+}
+
+/* CSS */
+
+.devicon-css3-plain {
+  color: #2965f1;
+}
+
+/* Git */
+
+.devicon-git-plain {
+  color: #f05133;
+}
+
+/* GitHub */
+
+.devicon-github-original {
+  color: #ffffff;
+}
+
+/* Vercel */
+
+.devicon-vercel-original {
+  color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .floating-icon-card {
+    width: 60px;
+    height: 60px;
+  }
+
+  .floating-icon-card i {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .floating-icons {
+    display: none;
+  }
+}

@@ -291,6 +291,8 @@ Image Wrapper
 .hero-image-wrapper {
   position: relative;
 
+  z-index: 2;
+
   display: flex;
 
   justify-content: center;
@@ -404,6 +406,7 @@ Hero Background Glow
   );
 
   pointer-events: none;
+  z-index: 0;
 
   filter: blur(30px);
 }
@@ -426,6 +429,7 @@ Hero Background Glow
   background: radial-gradient(circle, rgba(6, 182, 212, 0.1), transparent 70%);
 
   pointer-events: none;
+  z-index: 0;
 
   filter: blur(40px);
 }
@@ -719,4 +723,15 @@ Animations
 
     transform: translateY(18px);
   }
+}
+/*
+========================================
+Floating Tech Icons Layer
+========================================
+*/
+
+.hero > .floating-icons {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 }

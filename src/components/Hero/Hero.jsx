@@ -1,5 +1,6 @@
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import "./Hero.css";
+import FloatingIcons from "../FloatingIcons/FloatingIcons";
 
 const socialLinks = [
   {
@@ -23,6 +24,7 @@ export default function Hero() {
   return (
     <LazyMotion features={domAnimation}>
       <section className="hero" id="home">
+        <FloatingIcons />
         <div className="hero-content">
           <m.a
             href="#contact"
