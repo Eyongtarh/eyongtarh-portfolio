@@ -5,17 +5,17 @@ const cards = [
   {
     icon: "fas fa-code",
     title: "Full Stack Development",
-    text: "I build scalable web applications using React, Django and PostgreSQL, focusing on clean architecture and performance.",
+    text: "I build scalable, secure, and high-performance web applications using React, Django, REST APIs, and PostgreSQL. My focus is on clean architecture, maintainable code, responsive design, and delivering exceptional user experiences.",
   },
   {
     icon: "fas fa-lightbulb",
     title: "Problem Solver",
-    text: "I enjoy transforming complex business ideas into intuitive digital solutions with thoughtful design and functionality.",
+    text: "I enjoy transforming complex business challenges into intuitive digital solutions. By combining analytical thinking with modern technologies, I create applications that are both technically robust and easy to use.",
   },
   {
     icon: "fas fa-users",
     title: "Business Experience",
-    text: "My consulting and entrepreneurial background helps me bridge the gap between technology and real business needs.",
+    text: "My background in consulting, entrepreneurship, logistics, and business management enables me to bridge the gap between technology and business strategy, delivering software that creates real value for organizations.",
   },
 ];
 
@@ -23,42 +23,49 @@ export default function About() {
   return (
     <section id="about" className="about">
       <div className="container">
-        <motion.h2
+        <motion.div
+          className="section-heading"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true, amount: 0.2 }}
         >
-          About Me
-        </motion.h2>
+          <span className="section-subtitle">Who I Am</span>
 
-        <motion.p
-          className="about-intro"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.6 }}
-          viewport={{ once: true, amount: 0.2 }}
-        >
-          I'm a Full Stack Developer passionate about creating modern,
-          responsive and user-friendly applications. I combine software
-          engineering with consulting experience to deliver solutions that are
-          both technically strong and business focused.
-        </motion.p>
+          <h2>About Me</h2>
+
+          <p className="about-intro">
+            I'm a Full Stack Software Developer passionate about building
+            modern, scalable, and user-friendly web applications. By combining
+            software engineering expertise with years of consulting and business
+            experience, I create solutions that are technically robust,
+            performance-driven, and aligned with real business goals. I enjoy
+            solving challenging problems, learning emerging technologies, and
+            developing applications that deliver meaningful value to users and
+            organizations.
+          </p>
+        </motion.div>
 
         <div className="about-grid">
           {cards.map((card, index) => (
             <motion.article
-              key={index}
+              key={card.title}
               className="about-card"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{
+                y: -8,
+                transition: { duration: 0.25 },
+              }}
               transition={{
                 delay: index * 0.15,
                 duration: 0.6,
               }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <i className={card.icon}></i>
+              <div className="about-icon">
+                <i className={card.icon}></i>
+              </div>
 
               <h3>{card.title}</h3>
 
