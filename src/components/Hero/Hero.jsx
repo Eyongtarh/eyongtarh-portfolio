@@ -24,17 +24,24 @@ export default function Hero() {
     <LazyMotion features={domAnimation}>
       <section className="hero" id="home">
         <div className="hero-content">
-          <m.div
+          <m.a
+            href="#contact"
             className="hero-badge"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.6,
+            transition={{ duration: 0.6 }}
+            whileHover={{
+              scale: 1.03,
+              y: -2,
+            }}
+            whileTap={{
+              scale: 0.98,
             }}
           >
             <span className="badge-dot"></span>
             Available for opportunities
-          </m.div>
+            <i className="fas fa-arrow-right"></i>
+          </m.a>
 
           <m.p
             className="hero-greeting"

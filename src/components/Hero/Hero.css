@@ -51,6 +51,8 @@ Availability Badge
 
   gap: 12px;
 
+  width: fit-content;
+
   margin-bottom: 28px;
 
   padding: 10px 18px;
@@ -61,13 +63,43 @@ Availability Badge
 
   border: 1px solid rgba(59, 130, 246, 0.2);
 
+  backdrop-filter: blur(12px);
+
   color: var(--secondary);
 
   font-size: 0.9rem;
 
   font-weight: 600;
 
-  backdrop-filter: blur(12px);
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    color 0.25s ease;
+}
+
+.hero-badge:hover {
+  background: rgba(59, 130, 246, 0.14);
+
+  border-color: var(--primary);
+
+  color: white;
+
+  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.25);
+}
+
+.hero-badge i {
+  font-size: 0.8rem;
+
+  transition: transform 0.25s ease;
+}
+
+.hero-badge:hover i {
+  transform: translateX(5px);
 }
 
 .badge-dot {
