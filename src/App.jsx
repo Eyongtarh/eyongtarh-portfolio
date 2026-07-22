@@ -12,14 +12,16 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import LoadingScreen from "./components/LoadingScreen/LoadingScreen";
 import useLoading from "./hooks/useLoading";
 import AnimatedBackground from "./components/AnimatedBackground/AnimatedBackground";
+import CursorGlow from "./components/CursorGlow/CursorGlow";
 const Projects = lazy(() => import("./components/Projects/Projects"));
 const Contact = lazy(() => import("./components/Contact/Contact"));
 const loading = useLoading();
 function App() {
+  const loading = useLoading();
   return (
     <>
       <AnimatedBackground />
-      <LoadingScreen isLoading={loading} />
+      <CursorGlow />
       <LoadingScreen isLoading={loading} />
       {!loading && (
         <>

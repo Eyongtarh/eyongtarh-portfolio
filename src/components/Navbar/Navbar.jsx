@@ -1,24 +1,56 @@
 import { useEffect, useState } from "react";
 import "./Navbar.css";
 
+const navItems = [
+  { id: "home", label: "Home" },
+  { id: "about", label: "About" },
+  { id: "skills", label: "Skills" },
+  { id: "experience", label: "Experience" },
+  { id: "education", label: "Education" },
+  { id: "projects", label: "Projects" },
+  { id: "interests", label: "Interests" },
+  { id: "contact", label: "Contact" },
+];
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const [activeSection, setActiveSection] = useState("home");
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
-
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+  useEffect(() => {
+    const sections = document.querySelectorAll("section[id]");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        threshold: 0.4,
+        rootMargin: "-20% 0px -40% 0px",
+      },
+    );
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, []);
+  const closeMenu = () => setMenuOpen(false);
   return (
-    <header className={scrolled ? "navbar navbar-scrolled" : "navbar"}>
+    <header className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
       <div className="nav-container">
-        <a href="/" className="logo" aria-label="Eyongtarh Besong - Home">
+        <a
+          href="#home"
+          className="logo"
+          aria-label="Eyongtarh Besong - Home"
+          onClick={closeMenu}
+        >
           <img
             src="/logo.png"
             alt="Eyongtarh Besong logo"
@@ -28,30 +60,25 @@ export default function Navbar() {
           />
           <span>Eyongtarh Besong</span>
         </a>
-
         <nav
-          className={menuOpen ? "nav-links open" : "nav-links"}
+          className={`nav-links ${menuOpen ? "open" : ""}`}
           id="primary-navigation"
           aria-label="Primary navigation"
         >
-          <a href="#about">About</a>
-
-          <a href="#skills">Skills</a>
-
-          <a href="#experience">Experience</a>
-
-          <a href="#education">Education</a>
-
-          <a href="#projects">Projects</a>
-
-          <a href="#interests">Interests</a>
-
-          <a href="#contact">Contact</a>
+          {navItems.map((item) => (
+            <a
+              key={item.id}
+              href={`#${item.id}`}
+              onClick={closeMenu}
+              className={activeSection === item.id ? "active" : ""}
+            >
+              {item.label}
+            </a>
+          ))}
         </nav>
-
         <button
           className="hamburger"
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={() => setMenuOpen((prev) => !prev)}
           aria-label={
             menuOpen ? "Close navigation menu" : "Open navigation menu"
           }
@@ -59,7 +86,10 @@ export default function Navbar() {
           aria-controls="primary-navigation"
           type="button"
         >
-          <i className="fas fa-bars" aria-hidden="true"></i>
+          <i
+            className={menuOpen ? "fas fa-times" : "fas fa-bars"}
+            aria-hidden="true"
+          ></i>
         </button>
       </div>
     </header>
