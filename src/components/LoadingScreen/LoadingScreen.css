@@ -28,15 +28,15 @@
   gap: 20px;
 }
 
-.loader-image {
-  width: 10%;
-  height: 10%;
-
-  display: block;
-
-  object-fit: cover;
-
+.loader-logo {
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pulse 2s infinite;
 }
 
 .loader-logo span {

@@ -6,7 +6,6 @@ function LoadingScreen({ isLoading }) {
       <div className="loader-content">
         <div className="loader-logo">
           <img
-            className="loader-image"
             src="/profile.jpeg"
             alt="Eyongtarh Besong"
             width="90"
@@ -16,11 +15,8 @@ function LoadingScreen({ isLoading }) {
             decoding="async"
           />
         </div>
-
         <h2>Eyongtarh Besong</h2>
-
         <p>Building amazing experiences...</p>
-
         <div className="loading-bar">
           <span></span>
         </div>
