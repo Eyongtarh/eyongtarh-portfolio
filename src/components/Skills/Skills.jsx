@@ -14,9 +14,29 @@ function SkillGroup({ title, data }) {
 
       <div className="badge-container">
         {data.map((skill, index) => (
-          <span className="skill-badge" key={index}>
+          <motion.span
+            key={skill}
+            className="skill-badge"
+            initial={{
+              opacity: 0,
+              scale: 0.8,
+              y: 15,
+            }}
+            whileInView={{
+              opacity: 1,
+              scale: 1,
+              y: 0,
+            }}
+            viewport={{
+              once: true,
+            }}
+            transition={{
+              delay: index * 0.04,
+              duration: 0.35,
+            }}
+          >
             {skill}
-          </span>
+          </motion.span>
         ))}
       </div>
     </motion.div>
