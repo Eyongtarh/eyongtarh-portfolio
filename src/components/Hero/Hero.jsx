@@ -1,6 +1,5 @@
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import "./Hero.css";
-import FloatingIcons from "../FloatingIcons/FloatingIcons";
 
 const socialLinks = [
   {
@@ -179,7 +178,6 @@ export default function Hero() {
             ))}
           </m.div>
         </div>
-        <FloatingIcons />
         <m.div
           className="hero-image-wrapper"
           initial={{
