@@ -76,7 +76,6 @@ export default function Hero() {
             }}
           >
             <span>Eyongtarh</span>
-
             <span>Besong</span>
           </m.h1>
 

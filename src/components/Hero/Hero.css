@@ -149,15 +149,7 @@ Typography
 }
 
 .hero h1 span:last-child {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-
-  background-clip: text;
-
-  -webkit-background-clip: text;
-
-  color: transparent;
-
-  -webkit-text-fill-color: transparent;
+  color: var(--secondary);
 }
 
 .hero h2 {
