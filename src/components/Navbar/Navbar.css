@@ -81,7 +81,7 @@
 .hamburger:hover {
   color: var(--secondary);
 }
-@media (max-width: 977px) {
+@media (max-width: 1030px) {
   .hamburger {
     display: block;
   }

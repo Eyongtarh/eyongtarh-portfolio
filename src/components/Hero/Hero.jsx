@@ -111,12 +111,12 @@ export default function Hero() {
               duration: 0.7,
             }}
           >
-            I design and build scalable, user-focused web applications using
+            I design and build scalable, user focused web applications using
             <strong> React</strong>,<strong> Django</strong>,
             <strong>Python</strong>,<strong> PostgreSQL</strong>, and
-            <strong> JavaScript</strong>, transforming ideas into secure,
-            high-performance solutions through cloud deployment, API
-            integration, database design, and automation.
+            <strong> JavaScript</strong>, transforming ideas into secure, high
+            performance solutions through cloud deployment, API integration,
+            database design, and automation.
           </m.p>
 
           <m.div
