@@ -49,7 +49,7 @@ const projects = [
     github: "Tarh-Tastyhub",
     featured: true,
     order: 4,
-    image: "/images/projects/tastyhub.webp",
+    image: "/images/projects/tastyhub.png",
     demo: "https://tarh-tastyhub-4071346c00af.herokuapp.com",
     category: "Full Stack",
     highlight: "A restaurant/food ordering application.",
