@@ -93,17 +93,31 @@ const experience = [
   {
     id: 6,
     icon: "fa-solid fa-building",
-    role: "Managing Partner",
+    role: "Managing Partner & Accountant",
     company: "Sävenäs Hus & Hemtjänster HB",
     location: "Gothenburg, Sweden",
     period: "October 2012 - June 2018",
-    summary: "Business management and operations.",
+    summary:
+      "Co-managed business operations while overseeing the company's financial management, accounting, and administrative functions.",
+
     highlights: [
-      "Co-managed company operations.",
-      "Oversaw planning and administration.",
-      "Managed customer relationships.",
+      "Co-managed daily business operations and strategic planning.",
+      "Maintained financial records, bookkeeping, and accounting processes.",
+      "Prepared budgets, invoices, payroll, and financial reports.",
+      "Oversaw planning, administration, and regulatory compliance.",
+      "Built and maintained strong customer and stakeholder relationships.",
     ],
-    technologies: ["Leadership", "Management", "Planning"],
+
+    technologies: [
+      "Leadership",
+      "Business Management",
+      "Accounting",
+      "Bookkeeping",
+      "Budgeting",
+      "Payroll",
+      "Administration",
+      "Planning",
+    ],
   },
 
   {
