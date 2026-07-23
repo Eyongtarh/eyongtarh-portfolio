@@ -1,21 +1,16 @@
 # A. Eyongtarh Besong --- Portfolio
 
----
-
-**Deployed website: [Link to website](https://eyongtarh-portfolio.vercel.app/)**
-
-![Main image](public/images/projects/hero.png)
-
----
+A modern, responsive, and interactive portfolio website showcasing my skills, experience, education, and projects as a **Full Stack Software Developer**. Built with **React**, **Vite**, and **Framer Motion**, the website emphasises performance, accessibility, and clean user experience with a premium glassmorphism-inspired design.
 
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](#)
 [![Vite](https://img.shields.io/badge/Vite-Frontend-646CFF?logo=vite&logoColor=white)](#)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)](#)
 
-A modern, responsive portfolio built with **React**, **Vite**, and
-**Framer Motion**. It showcases my background as a Full Stack Developer,
-highlights selected GitHub projects, and demonstrates clean UI design
-and component-based architecture.
+---
+
+**Deployed website: [Link to website](https://eyongtarh-portfolio.vercel.app/)**
+
+![Main image](public/images/projects/hero.png)
 
 ---
 
@@ -28,41 +23,123 @@ and component-based architecture.
 - Downloadable CV
 - Modern, reusable React components
 - Clean and maintainable code structure
+- Smooth scrolling navigation
+- Animated hero section
+- Glassmorphism UI elements
+- Interactive project showcase
+- Skills section with technology icons
+- Experience timeline
+- Education timeline
+- Interests section
+- Contact section
+- Social media integration
+- Active navigation highlighting
+- Mobile-friendly navigation menu
+- Scroll animations using Framer Motion
+- Optimized images and performance
+- Accessibility best practices
+
+---
+
+## 🎨 Website Sections
+
+### Home
+
+A welcoming hero section introducing who I am, along with social links and quick navigation.
+
+### About
+
+An overview of my background, passion for software development, and career goals.
+
+### Skills
+
+A collection of technologies, programming languages, frameworks, and tools I use.
+
+### Experience
+
+Professional and practical experience highlighting responsibilities and achievements.
+
+### Education
+
+Academic background, certifications, and continuous learning journey.
+
+### Projects
+
+A showcase of selected software development projects demonstrating practical experience.
+
+### Interests
+
+Personal interests that complement my professional growth and creativity.
+
+### Contact
+
+Multiple ways to connect through email and professional social platforms.
 
 ---
 
 ## Tech Stack
 
-**Frontend**
+### Frontend
 
-- React
+- React 19
 - Vite
 - JavaScript (ES6+)
+- HTML5
 - CSS3
 - Framer Motion
+- Font Awesome
 
-**APIs & Tools**
+### Backend Experience
 
-- GitHub REST API
+Although this portfolio is frontend-based, my primary backend technologies include:
+
+- Django
+- Django REST Framework
+- PostgreSQL
+- SQLite
+
+### Development Tools
+
 - Git
 - GitHub
+- VSCode
+- npm
 
 ---
 
 ## 📂 Project Structure
 
-```text
-src/
-├── components/
-├── hooks/
-├── data/
-├── assets/
-└── App.jsx
-
-public/
-├── logo.png
-├── profile.png
-└── cv.pdf
+```
+portfolio/
+│
+├── public/
+│   ├── cv.pdf
+│   ├── logo.png
+│   └── profile.jpeg
+│
+├── src/
+│   ├── assets/
+│   │
+│   ├── components/
+│   │   ├── Navbar/
+│   │   ├── Hero/
+│   │   ├── About/
+│   │   ├── Skills/
+│   │   ├── Experience/
+│   │   ├── Education/
+│   │   ├── Projects/
+│   │   ├── Interests/
+│   │   ├── Contact/
+│   │   └── Footer/
+│   │
+|   |
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── package.json
+├── vite.config.js
+└── README.md
 ```
 
 ---
@@ -186,6 +263,10 @@ business value.
 
 ---
 
-## 📄 License
+## ⭐ Support
 
-This project is licensed under the EB License.
+If you found this project helpful, consider giving the repository a ⭐ on GitHub.
+
+---
+
+Built with ❤️ by **Eyongtarh Besong**
