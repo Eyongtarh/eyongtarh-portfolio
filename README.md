@@ -36,7 +36,7 @@ A modern, responsive, and interactive portfolio website showcasing my skills, ex
 - Active navigation highlighting
 - Mobile-friendly navigation menu
 - Scroll animations using Framer Motion
-- Optimized images and performance
+- Optimised images and performance
 - Accessibility best practices
 
 ---
@@ -163,75 +163,7 @@ eyongtarh-portfolio/
 
 ---
 
-## Getting Started
-
-### Clone the repository
-
-```bash
-git clone https://github.com/Eyongtarh/eyongtarh-portfolio.git
-cd eyongtarh-portfolio
-```
-
-### Install dependencies
-
-```bash
-npm install
-```
-
-### Run locally
-
-```bash
-npm run dev
-```
-
-### Build
-
-```bash
-npm run build
-```
-
-### Preview production build
-
-```bash
-npm run preview
-```
-
----
-
-## GitHub Integration
-
-The portfolio retrieves repositories using the GitHub REST API.
-
-Update the username in:
-
-```js
-const USERNAME = "Eyongtarh";
-```
-
-Featured repositories are configured in:
-
-```text
-src/data/projects.js
-```
-
-Each featured project should include:
-
-```js
-{
-  github: "Repository-Name",
-  featured: true,
-  order: 1,
-  image: "/images/projects/project.png",
-  demo: "https://example.com",
-  category: "Full Stack",
-  highlight: "Short description",
-  technologies: ["React", "Django"]
-}
-```
-
----
-
-## 🌟 Featured Projects
+## Featured Projects
 
 - **Ekpaw Spicies** -- Python business automation with Google Sheets
   integration.
@@ -252,32 +184,50 @@ A welcoming hero section introducing who I am, along with social links and quick
 ### About
 
 It contains an overview of my background, passion for software development, and career goals.
-![Main image](public/images/projects/about.png)
-![](public/images/projects/about2.png)
 
-### Skills
+![About Section Image1](public/images/projects/about.png)
+![About Section Image2](public/images/projects/about2.png)
 
-A collection of technologies, programming languages, frameworks, and tools I use.
+### Skills & Technologies
 
-### Experience
+This section is made up of a collection of technologies, programming languages, frameworks, and tools I use.
 
-Professional and practical experience highlighting responsibilities and achievements.
+![Skills Section Image1](public/images/projects/skills.png)
+![Skills Section Image2](public/images/projects/skills2.png)
+
+### Professional Experience
+
+This section presents my professional and practical experience highlighting responsibilities and achievements.
+
+![Experience Section Image1](public/images/projects/experience.png)
 
 ### Education
 
 Academic background, certifications, and continuous learning journey.
 
-### Projects
+![Education Section Image1](public/images/projects/education.png)
+
+### Featured Projects
 
 A showcase of selected software development projects demonstrating practical experience.
+
+![Projects Section Image1](public/images/projects/projects.png)
 
 ### Interests
 
 Personal interests that complement my professional growth and creativity.
 
+![Interests Section Image1](public/images/projects/interests.png)
+
 ### Contact
 
 Multiple ways to connect through email and professional social platforms.
+
+![Contact Section Image1](public/images/projects/contact.png)
+
+### Footer
+
+![Footer Section Image1](public/images/projects/footer.png)
 
 ---
 
@@ -289,13 +239,13 @@ No errors or warning messages were found when passing through the official [JSHi
 
 ### Responsiveness
 
-The responsiveness was checked manually by using devtools (Chrome) throughout the whole development. It was also checked with [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb/related?hl=en) Chrome extension.
+The responsiveness was checked manually by using devtools (Chrome) throughout the whole development. [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb/related?hl=en) Chrome extension.
 
-<a>
-<img src="documentation/responsiveness/home_mobile.png" alt="Responsive Design mobile" height="400">
-<img src="documentation/responsiveness/home_tablet.png" alt="Responsive Design tablet" height="400">
-<img src="documentation/responsiveness/home_desktop_.png" alt="Responsive Design desktop" height="400">
-</a>
+![Responsive Design Home page](public/images/projects/responsive_home.png)
+
+![Responsive Design Home page](public/images/projects/responsive_about.png)
+
+![Responsive Design Home page](public/images/projects/responsive_footer.png)
 
 ### Compatibility
 
@@ -303,45 +253,37 @@ Testing was conducted on the following browsers;
 
 - Safari;
 
-![Compatibility Report](documentation/validation/compatibility_safari.png)
+![Compatibility Report](public/images/projects/compatibility_safari.png)
 
 - Chrome;
 
-![Compatibility Report](documentation/validation/compatibility_chrome.png)
+![Compatibility Report](public/images/projects/compatibility_chrome.png)
 
 - Firefox;
 
-![Compatibility Report](documentation/validation/compatibility_firefox.png)
+![Compatibility Report](public/images/projects/compatibility_firefox.png)
 
 ### Lighthouse Report
 
 LightHouse is a web performance testing tool that can be used to evaluate the performance of a website. The report is generated by Google Chrome.
 
-#### Home page Lighthouse report
-
-- ![Home page Lighthouse report](documentation/validation/home_lighthouse_report.png)
+- ![Lighthouse report](public/images/projects/lighthouse_report.png)
 
 ### CSS Validation:
 
 No errors or warnings were found when passing through the official [W3C (Jigsaw)](https://jigsaw.w3.org/css-validator/#validate_by_uri) validator. The css code works perfectly on various devices.
 
-- Base.css
-
-![Base.css Validation Report](documentation/validation/base_css_validation.png)
+![CSS Validation Report](public/images/projects/css_validation.png)
 
 ### HTML Validation:
 
 No errors or warnings were found when passing through the official [W3C](https://validator.w3.org/) validator. This checking was done manually by copying the view page source code and pasting it into the validator.
 
-#### Home page HTML validation report
-
-- ![Home page HTML validation report](documentation/validation/home_html_validation.png)
-
-```
+- ![HTML validation report](documentation/validation/html_validation.png)
 
 ---
 
-## 👨‍💻 About Me
+## About Me
 
 I'm a Full Stack Developer with experience building responsive web
 applications using React, Django, PostgreSQL, and JavaScript. I enjoy
@@ -350,7 +292,7 @@ business value.
 
 ---
 
-## 📫 Contact
+## Contact
 
 - GitHub: https://github.com/Eyongtarh
 - LinkedIn: Add your LinkedIn URL
@@ -358,11 +300,14 @@ business value.
 
 ---
 
-## ⭐ Support
+## Support
 
 If you found this project helpful, consider giving the repository a ⭐ on GitHub.
 
 ---
 
 Built with ❤️ by **Eyongtarh Besong**
+
+```
+
 ```
